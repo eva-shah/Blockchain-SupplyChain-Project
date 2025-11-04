@@ -45,7 +45,7 @@ TrackChain/
 │
 ├─ generate_outputs.sh              # produces offline “expected” CLI logs for submission
 │
-├─ outputs/                     # folder auto-filled by generate_outputs.sh
+├─ outputs/                         # folder auto-filled by generate_outputs.sh
 │  ├─ 01_channel_main_supply.txt    # log: main-supply channel creation
 │  ├─ 02_channel_manu_dist.txt      # log: manu-dist (private) channel setup
 │  ├─ 03_chaincode_deploy.txt       # log: chaincode deployment across both channels
@@ -53,7 +53,7 @@ TrackChain/
 │  └─ SUMMARY.txt                   # consolidated Task 2 security + performance summary
 │
 ├─ report/
-│  └─ TrackChain_Project_Report.docx  # detailed report covering Task 1 & Task 2
+│  └─ Blockchain_Assignment4_Report.docx  # detailed report covering Task 1 & Task 2
 │
 └─ README.md                        # this document (project overview and usage)
 
