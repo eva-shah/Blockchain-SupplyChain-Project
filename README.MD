@@ -447,8 +447,9 @@ This shows intent, architecture, commands, and consistent outputs — perfect fo
 ---
 
 ## 14) References
-[1] Hyperledger Fabric Documentation, v2.5.0, https://hyperledger-fabric.readthedocs.io/
-[2] Crosby, M., et al. “Blockchain technology: Beyond bitcoin.” Applied Innovation Review, 2016.
-[3] IBM Blockchain Foundation Developer Guide, IBM Cloud Docs, 2024.
+
+* [1] Hyperledger Fabric Documentation, v2.5.0, https://hyperledger-fabric.readthedocs.io/
+* [2] Crosby, M., et al. “Blockchain technology: Beyond bitcoin.” Applied Innovation Review, 2016.
+* [3] IBM Blockchain Foundation Developer Guide, IBM Cloud Docs, 2024.
 ---
 =
