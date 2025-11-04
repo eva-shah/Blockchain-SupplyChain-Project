@@ -1,0 +1,28 @@
+
+--- Chaincode deployment ---
+
+Using organization 1
+Chaincode installed on peer0.maker.example.com
+Using organization 2
+Chaincode installed on peer0.wholesaler.example.com
+Approving chaincode definition for org: MakerMSP
+Approving chaincode definition for org: WholesalerMSP
+Committing chaincode definition on channel 'main-supply'
+Committed chaincode definition: name: trackchain, sequence: 1, version: 1.0
+
+
+
+
+--- Chaincode deployment ---
+
+Using organization 1
+Chaincode installed on peer0.maker.example.com
+Using organization 2
+Chaincode installed on peer0.wholesaler.example.com
+Approving chaincode definition for org: MakerMSP
+Approving chaincode definition for org: WholesalerMSP
+Committing chaincode definition on channel 'main-supply'
+Committed chaincode definition: name: trackchain, sequence: 1, version: 1.0
+
+
+

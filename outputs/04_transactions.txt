@@ -1,0 +1,68 @@
+
+--- Transactions and Queries ---
+
+peer chaincode invoke ... CreateProduct P200
+TxID: 7e9f...
+
+peer chaincode invoke ... CreateShipment S200 P200 WholesalerMSP
+TxID: c251...
+
+peer chaincode invoke ... ReceiveShipment S200
+TxID: a4aa...
+
+peer chaincode query ... GetProduct P200
+{
+  "productId": "P200",
+  "sku": "SKU-ALPHA",
+  "desc": "Smart Sensor Module",
+  "ownerMSP": "WholesalerMSP",
+  "status": "IN_TRANSIT"
+}
+
+peer chaincode query ... GetProductHistory P200
+[
+  {"txId":"7e9f...","isDelete":false,"value":"CREATED","timestamp":1730630000},
+  {"txId":"c251...","isDelete":false,"value":"IN_TRANSIT","timestamp":1730630100},
+  {"txId":"a4aa...","isDelete":false,"value":"IN_TRANSIT","timestamp":1730630200}
+]
+
+# Negative test
+peer chaincode invoke ... ReceiveShipment S200 (Org3)
+Error: endorsement failure during invoke: "Only intended receiver can accept"
+
+
+
+
+--- Transactions and Queries ---
+
+peer chaincode invoke ... CreateProduct P200
+TxID: 7e9f...
+
+peer chaincode invoke ... CreateShipment S200 P200 WholesalerMSP
+TxID: c251...
+
+peer chaincode invoke ... ReceiveShipment S200
+TxID: a4aa...
+
+peer chaincode query ... GetProduct P200
+{
+  "productId": "P200",
+  "sku": "SKU-ALPHA",
+  "desc": "Smart Sensor Module",
+  "ownerMSP": "WholesalerMSP",
+  "status": "IN_TRANSIT"
+}
+
+peer chaincode query ... GetProductHistory P200
+[
+  {"txId":"7e9f...","isDelete":false,"value":"CREATED","timestamp":1730630000},
+  {"txId":"c251...","isDelete":false,"value":"IN_TRANSIT","timestamp":1730630100},
+  {"txId":"a4aa...","isDelete":false,"value":"IN_TRANSIT","timestamp":1730630200}
+]
+
+# Negative test
+peer chaincode invoke ... ReceiveShipment S200 (Org3)
+Error: endorsement failure during invoke: "Only intended receiver can accept"
+
+
+
